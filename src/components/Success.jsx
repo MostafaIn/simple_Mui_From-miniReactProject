@@ -2,17 +2,12 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton';
-// import FormUserDetails from './FormUserDetails';
 
 export class Success extends Component {
+
     
-    back = e => {
-        // e.preventDefault();
-        // this.props.prevStep();
-        // <FormUserDetails />
-    }
     render() {
-        
+
         return (
             <MuiThemeProvider>
                 <React.Fragment>
@@ -25,7 +20,7 @@ export class Success extends Component {
                     <RaisedButton
                         label="DONE"
                         primary={false}
-                        onClick={this.back}
+                        onClick={this.Done}
                         style={styles.button}
                     />
 
